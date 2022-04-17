@@ -188,10 +188,23 @@ hr{
 }
 #times h2{
     color: #fafafa;
+
 }
-
-
-
+footer{
+    height: 150px;
+}
+.social-network{
+    text-align: center;
+}
+.social-network>li{
+    display: inline;
+}
+.social-network i{
+    font-size: 80px;
+    margin: 1%;
+    padding: 5%;
+    color: #353535;
+}
 
 
 
