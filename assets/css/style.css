@@ -8,7 +8,7 @@ h1, h2{
     font-family: oswald,sans-serif;
     text-transform: oppercase;
     letter-spacing:4px ;
-    color: #252525;
+    color: black;
 }
 #logo{
     float:left;
@@ -164,8 +164,31 @@ hr{
     border-radius: 50%;
 }
 
+#times {
+    background-image: url('../images/background-time.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+.time-section{
+    color: #fafafa;
+    background-color: #252525;
+    width: 18%;
+    height: 300px;
+    float: left;
+    padding: 10px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+   opacity: 60%;
+ margin-right: 11px; 
 
 
+}
+#times h2{
+    color: #fafafa;
+}
 
 
 
