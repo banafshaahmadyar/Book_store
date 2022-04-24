@@ -3,6 +3,12 @@ body{
     font-family: Arial, sans-serif;
     font-weight: 300;
     color: #353535;
+    margin:0;
+    padding:0;
+}
+header{
+    height:100px;
+    background: #f4f4f4;
 }
 h1, h2{
     font-family: oswald,sans-serif;
@@ -10,40 +16,46 @@ h1, h2{
     letter-spacing:4px ;
     color: black;
 }
+
 #logo{
     float:left;
-    font-size: 280%;
     margin-left: 50px;
+    margin-top:35px;
+    color: #ff6d00;
 }
-#logo, #menu{
-    line-height: 75px;
+
+a{
+    text-decoration: none;
+    color:inherit;
 }
-
-
-
-#menu{
-    font-size: 110%;
-    letter-spacing: 4px;
+ul#menu{
+    margin:0;
 }
 #menu li{
     float: right;
     list-style-type:none;
     margin-right: 10px;
-
+    margin-top:40px;
 }
 #menu a{
     text-decoration: none;
     color: inherit;
+    margin-right: 30px;
+    
+    letter-spacing: 4px;
 }
 #menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #ff6d00db;
+    padding-bottom: 6px;
+    color: #ff6d00db;
 }
 .active{
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #ff6d00db;
+    padding-bottom: 6px;
+    color: #ff6d00db !important;
 }
 #cover-text,#cover-text h2{
     color: white;
-
 }
 #image-outer{
     height: 600px;
@@ -56,7 +68,8 @@ h1, h2{
 #image{
     height: 600px;
     width: 100%;
-   background: url('../images/image.jpg') no-repeat center center;
+   background: url('../images/lib.jpg') no-repeat center center;
+   background-size: cover;
    animation: image-zoom;
    animation-duration: 5s;
    animation-fill-mode: forwards;
@@ -74,40 +87,43 @@ h1, h2{
 }
 
 #cover-text{
-    font-size: 130%;
+    font-size: 22px;
     font-family: oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    width:300px ;
-    height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-    background-color: red;
+    width: 300px;
+    height: 210px;
+    /* padding-top: 40px; */
+    /* padding-left: 10px; */
+    background-color: #ff6d00db;
     bottom: 30px;
     right: 150px;
-
     position: absolute;
+    border-radius: 10px;
+    padding-left: 16px;
 }
 #club-ethos{
+    margin-top: 40px;
     height: 600px;
 
 }
 #right-about{
     padding-top: 30px;
-    width: 33%;
+    width: 30%;
     float: left;
-  
-
+    margin-left: 30px;
 }
 #left-about{
     padding-top: 30px;
-    width: 33%;
+    width: 29%;
     float: right;
-  
+    margin-right:30px; 
 }
 #center-about{
     width: 33%;
     margin: 0 auto;
+    
+    margin-top: 100px;
   
 
 }
@@ -144,7 +160,7 @@ hr{
 }
 #welcome{
     text-align: center;
-    margin: 20px 0;
+    margin: 20px  0;
     font-size: 200%;
 }
 #circle-continer{
@@ -156,11 +172,7 @@ hr{
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
-
-}
-#circle-cover-bg{
-    background: url('../images/club-ethos-image.jpg') no-repeat center center;
-    height: 100%;
+    background: url('../images/girl.jpg') no-repeat center center;
     border-radius: 50%;
 }
 
@@ -175,16 +187,13 @@ hr{
 .time-section{
     color: #fafafa;
     background-color: #252525;
-    width: 18%;
     height: 300px;
     float: left;
-    padding: 10px 0 0 10px;
     text-align: center;
     border: 2px solid white;
-   opacity: 60%;
- margin-right: 11px; 
-
-
+    opacity: 60%;
+    width: 19%;
+    margin: 4px;
 }
 #times h2{
     color: #fafafa;
@@ -200,11 +209,20 @@ footer{
     display: inline;
 }
 .social-network i{
-    font-size: 80px;
-    margin: 1%;
-    padding: 5%;
+    font-size: 40px;
+    margin: 0%;
+    padding: 1%;
     color: #353535;
 }
+
+#social-media-title{
+
+    width:fit-content;
+    margin:0 auto;
+    padding:40px 0px 5px 0px;
+
+}
+
 #photos{
     clear: both;
     line-height: 0;
@@ -240,6 +258,50 @@ footer{
         column-count: 3;
     }
 }
+#sinup{
+    margin-top: auto;
+} 
+
+#signup-div{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px #888888;
+    padding: 34px;
+
+}
+
+#signup-div form>input{
+    width: 100%;
+    margin: 13px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#gallery-photos{
+    margin-left:5%;
+}
+#gallery-photos img{
+    width: 20%;
+    margin: 15px;
+    border-radius: 15px;
+    height: 200px;
+}
+#gallery-title{
+    font-size: 30px;
+    text-align: center;
+    color: #ff6d00db;
+}
+
+#button{
+    background: #ff6d00db;
+    border: 0px !important;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 @media screen and(max-width: 800px){
     #photos{
         column-count: 2;
@@ -247,7 +309,6 @@ footer{
 
 }
 
-    
 
 
 
