@@ -232,32 +232,7 @@ footer{
 #photos>image{
     width: 100%;
 }
-@media screen and(max-width: 1200px){
-    #club-ethos{
-        width: 65px;
-        height: 1200px;
-        max-width: 0 auto;
-    }
-    #welcome{
-        padding: 30px 0;
-        margin: 0;
 
-    }
-    #center-avout{
-        clear: both;
-        width: 100px;
-        float: left;
-        padding: 0;
-
-
-    }
-    #hr{
-        display: none;
-    }
-    #photos{
-        column-count: 3;
-    }
-}
 #sinup{
     margin-top: auto;
 } 
@@ -302,13 +277,56 @@ footer{
     border-radius: 5px;
 }
 
-@media screen and(max-width: 800px){
-    #photos{
-        column-count: 2;
+@media screen and (max-width : 1500px) {
+    body {
+        background: orange;
     }
-
 }
 
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    body {
+        background: red;
+    }
+}
+
+@media screen and (min-width : 300px) and (max-width : 767px) {
+    body {
+        background: green;
+    }
+
+    #menu a {
+        font-size: 10px; 
+        margin-right:10px;
+    }
+    #logo{
+        font-size: 20px;
+    }
+    #right-about{
+        padding: 30px;
+        width: 100%;
+        float: unset;
+        margin-left: 0px;
+    }
+    #left-about {
+        padding: 30px;
+        width: 100%;
+        float: unset;
+        margin-right: 0px;
+    }
+    #center-about {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top:0px;
+        display: block;
+    }
+    #club-ethos {
+        margin-top: 40px;
+        height: unset;
+    }
+    .time-section{
+        width: 48%;
+    }
+}
 
 
 
