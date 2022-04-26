@@ -120,6 +120,7 @@ ul#menu{
     margin-right:30px; 
 }
 #center-about{
+   
     width: 33%;
     margin: 0 auto;
     
@@ -277,22 +278,42 @@ footer{
     border-radius: 5px;
 }
 
-@media screen and (max-width : 1500px) {
-    body {
-        background: orange;
-    }
-}
+
 
 @media screen and (min-width : 768px) and (max-width : 1024px) {
-    body {
-        background: red;
+   
+    #right-about{
+        padding: 10px;
+        width: 25% !important;
+        float: right;
+        margin-left: 0px;
     }
+    #left-about {
+        padding: 10px;
+        width: 25% !important;
+        float: left;
+        margin-right: 0px;
+    }
+    #center-about {
+     
+        width: 25% !important;
+        margin-bottom: 50px;
+        margin-top:0px;
+        display: block;
+
+    }
+    #circle-continer{
+        width:200px;
+        height:200px;
+    }
+    .time-section{
+        width:48%;
+    }
+    
 }
 
 @media screen and (min-width : 300px) and (max-width : 767px) {
-    body {
-        background: green;
-    }
+    
 
     #menu a {
         font-size: 10px; 
